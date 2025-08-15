@@ -1,0 +1,190 @@
+# MADMEMES - Mad Scientists Meme Generator
+# Comprehensive .gitignore file
+
+# ===== SYSTEM FILES =====
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== DEVELOPMENT ENVIRONMENT =====
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ===== PYTHON =====
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+.venv
+
+# ===== NODE.JS (if we add npm later) =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+
+# ===== LOGS AND TEMPORARY FILES =====
+# Log files
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+.tmp/
+temp/
+
+# ===== SERVER AND DEPLOYMENT =====
+# Local server files
+.cache/
+.server/
+*.pid
+
+# ===== SENSITIVE DATA =====
+# Environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.json
+secrets.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# API keys and credentials
+api-keys.txt
+credentials.json
+auth.json
+
+# ===== BUILD AND DEPLOYMENT =====
+# Build outputs
+build/
+dist/
+out/
+public/build/
+.next/
+.nuxt/
+.cache/
+
+# ===== VERSION CONTROL =====
+# Git files
+.git/
+.gitattributes
+
+# ===== PROJECT SPECIFIC =====
+# Large template files (if we get too many)
+# templates/*.png  # Uncomment if templates become too large for repo
+
+# Local configuration overrides
+local-config.js
+local-settings.json
+
+# Test files
+test-output/
+coverage/
+.nyc_output/
+
+# ===== BROWSER AND TESTING =====
+# Browser testing
+.selenium/
+chromedriver
+geckodriver
+*.har
+
+# ===== DOCUMENTATION =====
+# Generated docs
+docs/build/
+site/
+
+# ===== MISC =====
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Large media files (backup rule)
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== KEEP THESE FILES =====
+# Important: DO NOT ignore these essential files
+# !templates/*.png  # Keep our meme templates
+# !README.md        # Keep documentation
+# !start-server.sh  # Keep our startup script 

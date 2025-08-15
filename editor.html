@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Editor - MADMEMES</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">🧪 MADMEMES</h1>
+            <p class="tagline">Create your perfect meme!</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="editor-container">
+            <div class="editor-header">
+                <a href="index.html" class="back-button">
+                    ← Back to Templates
+                </a>
+                <h1 id="templateTitle">Meme Editor</h1>
+            </div>
+
+            <div class="editor-content">
+                <div class="canvas-container">
+                    <canvas id="memeCanvas" width="500" height="500"></canvas>
+                </div>
+
+                <div class="controls">
+                    <h3>Customize Your Meme</h3>
+                    <div class="control-group">
+                        <p class="tip-text">
+                            💡 <strong>Tip:</strong> Click and drag text on the canvas to reposition it!<br>
+                            🔒 Text is automatically kept within image boundaries.
+                        </p>
+                        <button onclick="resetTextPositions()" class="reset-button">
+                            🔄 Reset Text Positions
+                        </button>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="topText">Top Text</label>
+                        <input type="text" id="topText" placeholder="Enter top text..." maxlength="50">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="bottomText">Bottom Text</label>
+                        <input type="text" id="bottomText" placeholder="Enter bottom text..." maxlength="50">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="fontSize">Font Size</label>
+                        <input type="range" id="fontSize" min="20" max="60" value="40">
+                        <span id="fontSizeValue">40px</span>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="fontFamily">Font Style</label>
+                        <select id="fontFamily">
+                            <option value="Impact">Impact (Classic)</option>
+                            <option value="Arial Black">Arial Black</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="textColor">Text Color</label>
+                        <input type="color" id="textColor" value="#ffffff" class="color-input">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="strokeColor">Outline Color</label>
+                        <input type="color" id="strokeColor" value="#000000" class="color-input">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="strokeWidth">Outline Width</label>
+                        <input type="range" id="strokeWidth" min="0" max="8" value="3">
+                        <span id="strokeWidthValue">3px</span>
+                    </div>
+
+                    <button class="download-button" onclick="downloadMeme()">
+                        📥 Download Meme
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jahkay. Made with ❤️ for meme lovers everywhere.</p>
+        </div>
+    </footer>
+
+    <script src="editor.js"></script>
+</body>
+</html> 
